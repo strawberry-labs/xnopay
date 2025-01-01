@@ -1,0 +1,105 @@
+# ------------------------
+# Python-specific patterns
+# ------------------------
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution/Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test output
+*.coverage
+.cache/
+.tox/
+.nox/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.env.*
+.venv/
+virtualenv/
+venv/
+
+# Logs
+*.log
+
+# ------------------------
+# JavaScript-specific patterns
+# ------------------------
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build directories
+build/
+dist/
+.out/
+.next/
+coverage/
+.temp/
+.tmp/
+.eslintcache
+.parcel-cache/
+
+# Generated files
+*.map
+*.gz
+*.lock
+
+# ------------------------
+# Editor/IDE patterns
+# ------------------------
+
+# VS Code
+.vscode/
+.history/
+
+# JetBrains (IntelliJ, WebStorm, PyCharm)
+.idea/
+*.iml
+
+# Others
+*.swp
+*.swo
+*.bak
+
+# ------------------------
+# System files
+# ------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ------------------------
+# Common patterns for monorepo
+# ------------------------
+
+# Ignore subfolder-specific gitignore rules if necessary
+js/node_modules/
+py/__pycache__/
