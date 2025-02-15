@@ -150,11 +150,13 @@ export class RpcClient {
 
     if (this.auth) {
       if (this.auth.type === "bearer") {
-        headers["Authorization"] = `Bearer ${this.auth.token}`;
+        headers["Authorization"] = `Bearer ${this.auth.token ?? ""}`;
       } else if (this.auth.type === "apiKey") {
-        headers["x-api-key"] = this.auth.key;
+        headers["x-api-key"] = this.auth.key ?? "";
       } else if (this.auth.type === "basic") {
-        const encodedAuth = btoa(`${this.auth.username}:${this.auth.password}`);
+        const encodedAuth = btoa(
+          `${this.auth.username ?? ""}:${this.auth.password ?? ""}`
+        );
         headers["Authorization"] = `Basic ${encodedAuth}`;
       }
     }
