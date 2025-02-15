@@ -1,15 +1,41 @@
 {
   "name": "xnopay",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.0.1",
+  "description": "Nano Cryptocurrency Library",
+  "main": "dist/xnopay.js",
+  "types": "dist/xnopay.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/strawberry-labs/xnopay.git"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "nano",
+    "cryptocurrency",
+    "rpc",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Chirag Asarpota chirag@strawberrylabs.net",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strawberry-labs/xnopay/issues"
+  },
+  "homepage": "https://github.com/strawberry-labs/xnopay#readme",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
 }
