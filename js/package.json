@@ -1,6 +1,6 @@
 {
   "name": "xnopay",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nano Cryptocurrency Library",
   "main": "dist/xnopay.js",
   "types": "dist/xnopay.d.ts",
