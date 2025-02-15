@@ -683,8 +683,6 @@ export interface TelemetryRequestParams {
   port: number;
 }
 
-export interface SignOptions
-  extends PartialRecord<keyof SignRequestParams, string | boolean | any> {}
 export interface SignRequestParams {
   json_block: boolean;
   key: string;
@@ -785,11 +783,6 @@ export interface BlocksInfoRequestParams {
   receive_hash: boolean;
 }
 
-export interface BlockCreateOptions
-  extends PartialRecord<
-    keyof BlockCreateRequestParams,
-    string | boolean | number | any
-  > {}
 export interface BlockCreateRequestParams {
   json_block: boolean;
   type: string;
